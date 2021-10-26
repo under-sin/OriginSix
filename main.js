@@ -1,4 +1,4 @@
-//* abre e fecha o menu quando clicar no menu ou no x
+//*  abre e fecha o menu quando clicar no menu ou no x
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -36,7 +36,13 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination'
   },
   mousewheel: true, //? usar o mouse para rolar o slide
-  keyboard: true //? usar o teclado para rolar o slide
+  keyboard: true, //? usar o teclado para rolar o slide
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
 })
 
 //* ScrollReveal - mostrar elementos quando der scroll
