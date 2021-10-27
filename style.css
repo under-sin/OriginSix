@@ -24,7 +24,7 @@ img {
   /** sistemas de variaveis no css*/
   --header-height: 4.5rem;
   /* colors */
-  --hue: 159;
+  --hue: 220;
   /* HSL color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
@@ -528,8 +528,8 @@ footer .social a:hover {
 }
 
 /** reponsivo  */
-/* large device +1000 */
-@media (min-width: 1150px) {
+/* large device +1200 */
+@media (min-width: 1200px) {
   .container {
     max-width: 1120px;
     margin-left: auto;
