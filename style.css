@@ -175,7 +175,8 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
   color: var(--base-color);
 }
 
@@ -190,7 +191,8 @@ nav ul li a::after {
   bottom: -1.5rem;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
   width: 100%;
   transition: width 0.3s;
 }
@@ -233,7 +235,7 @@ nav.show ul.grid {
   gap: 4rem;
 }
 
-/*? TOGGLE MENU */
+/** TOGGLE MENU */
 .toggle {
   color: var(--base-color);
   font-size: 1.5rem;
@@ -305,7 +307,7 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
-/*? ABOUT */
+/** ABOUT */
 #about {
   background: #fff;
 }
@@ -563,6 +565,12 @@ footer .social a:hover {
 
   nav .menu ul li a.title {
     font: 400 1rem var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.active {
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
   }
 
   nav .icon-menu {
